@@ -13,5 +13,6 @@
     'depends': ['web'],
     'data': [
         'report/invoice_report.xml',
+        'views/res_company.xml',
     ],
 }
