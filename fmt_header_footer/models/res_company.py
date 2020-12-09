@@ -8,3 +8,4 @@ from odoo.exceptions import UserError
 class ResCompany(models.Model):
         _inherit = 'res.company'
         invoice_header_image = fields.Binary('Header Image')
+        invoice_footer_image = fields.Binary('Footer Image')
