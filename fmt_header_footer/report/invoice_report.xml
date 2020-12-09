@@ -12,7 +12,13 @@
                             <span t-field="company.name"/>
                         </li>
                         <li style="background-color: #929090;color: white;border-radius: 25px;" class="text-center" t-if="company.partner_id">
-                            <p>Customs Clearances EST.</p>
+                            <p>Road Freight Services</p>
+                        </li>
+                        <li style="background-color: #929090;color: white;border-radius: 25px;" class="text-center" t-if="company.partner_id">
+                            <p>C.R 1116010688</p>
+                        </li>
+                        <li style="background-color: #929090;color: white;border-radius: 25px;" class="text-center" t-if="company.partner_id">
+                            <p>Trans. Lic. No. 010411015500</p>
                         </li>
                         <li class="text-center" style="margin-top:-10px" t-if="company.vat">
                             <p>Vat No. <span t-field="company.vat"/></p>
@@ -30,7 +36,13 @@
                             <span t-field="company.partner_id.arabic_name"/>
                         </li>
                         <li style="background-color: #929090;color: white;border-radius: 25px;" class="text-center" t-if="company.partner_id">
-                            <p>للتخليص الجمركي</p>
+                            <p>خدمات النقل البري للبضائع</p>
+                        </li>
+                        <li style="background-color: #929090;color: white;border-radius: 25px;" class="text-center" t-if="company.partner_id">
+                            <p>س.ت 1116010688</p>
+                        </li>
+                        <li style="background-color: #929090;color: white;border-radius: 25px;" class="text-center" t-if="company.partner_id">
+                            <p>ترخيص نقل رقم : 010411015500</p>
                         </li>
                         <li class="text-center" style="margin-top:-10px" t-if="company.vat">
                             <p>الرقم الضريي: <span t-field="company.vat"/></p>
