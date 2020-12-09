@@ -6,49 +6,7 @@
 
             <div class="container-fluid" >
               <div style="width:100%;" class="row">
-                <div class="col-auto" style="width:35%;text-align:left;">
-                    <ul class="list-unstyled">
-                        <li class="text-center" style="color: #36bbfc;font-weight:bold;font-size:17px;" t-if="company.name">
-                            <span t-field="company.name"/>
-                        </li>
-                        <li style="background-color: #929090;color: white;border-radius: 25px;" class="text-center" t-if="company.partner_id">
-                            <p>Road Freight Services</p>
-                        </li>
-                        <li style="background-color: #929090;color: white;border-radius: 25px;" class="text-center" t-if="company.partner_id">
-                            <p>C.R 1116010688</p>
-                        </li>
-                        <li style="background-color: #929090;color: white;border-radius: 25px;" class="text-center" t-if="company.partner_id">
-                            <p>Trans. Lic. No. 010411015500</p>
-                        </li>
-                        <li class="text-center" style="margin-top:-10px" t-if="company.vat">
-                            <p>Vat No. <span t-field="company.vat"/></p>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="col-auto" style="width:30%;text-align:center;">
-                        <img t-if="company.logo" t-att-src="image_data_uri(company.logo)" style="height: 100px;width: 100px;text-align:center;" alt="Logo"/>
-                </div>
-
-                <div class="col-auto" style="width:35%;text-align:right;">
-                    <ul class="list-unstyled">
-                        <li class="text-center" style="color: #36bbfc;font-weight:bold;font-size:18px;" t-if="company.partner_id">
-                            <span t-field="company.partner_id.arabic_name"/>
-                        </li>
-                        <li style="background-color: #929090;color: white;border-radius: 25px;" class="text-center" t-if="company.partner_id">
-                            <p>خدمات النقل البري للبضائع</p>
-                        </li>
-                        <li style="background-color: #929090;color: white;border-radius: 25px;" class="text-center" t-if="company.partner_id">
-                            <p>س.ت 1116010688</p>
-                        </li>
-                        <li style="background-color: #929090;color: white;border-radius: 25px;" class="text-center" t-if="company.partner_id">
-                            <p>ترخيص نقل رقم : 010411015500</p>
-                        </li>
-                        <li class="text-center" style="margin-top:-10px" t-if="company.vat">
-                            <p>الرقم الضريي: <span t-field="company.vat"/></p>
-                        </li>
-                    </ul>
-                </div>
+                  <img t-if="company.invoice_header_image" t-att-src="image_data_uri(company.invoice_header_image)"  alt="Logo"/>
               </div>
             </div>
             </div>
