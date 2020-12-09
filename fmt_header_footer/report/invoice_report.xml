@@ -7,7 +7,6 @@
             <div class="container-fluid" >
               <div style="width:100%;" class="row">
                   <img t-if="company.invoice_header_image" t-att-src="image_data_uri(company.invoice_header_image)"  alt="Logo"/>
-                  <img t-if="company.invoice_footer_image" t-att-src="image_data_uri(company.invoice_footer_image)"  alt="Logo"/>
 
               </div>
             </div>
@@ -20,31 +19,8 @@
 
         <div class="footer o_standard_footer">
                 <div class="text-center" style="border-top: 1px solid black;">
-                    <table width="100%">
-                        <tr>
-                            <td>
-                                <p style="color:#36bbfc;" class="fa fa-phone-square"><span style="color:black;padding-left:3px"><span t-field="company.phone"/></span></p>
-                            </td>
-                            <td>
-                                <p style="color:#36bbfc;" class="fa fa fa-mobile"><span style="color:black;padding-left:3px"><span t-field="company.partner_id.mobile"/></span></p>
-                            </td>
-                            <td>
-                                <p style="color:#36bbfc;" class="fa fa-envelope-o"><span style="color:black;padding-left:3px"><span t-field="company.company_registry"/></span></p>
-                            </td>
-                            <td>
-                                <p style="color:#36bbfc;" class="fa fa-globe"><span style="color:black;padding-left:3px"><span t-field="company.website"/></span></p>
-                            </td>
-
-                        </tr>
-                    </table>
-                    <table width="100%">
-                        <tr>
-                            <td><span t-field="company.street" /></td>
-                            <td style="text-align:right;"><span t-field="company.street2" /></td>
-                        </tr>
-                    </table>
-
-
+                 <img t-if="company.invoice_footer_image" t-att-src="image_data_uri(company.invoice_footer_image)"  alt="Footer"/>
+                    
                     <div name="financial_infos">
                         <span t-field="company.report_footer"/>
                     </div>
