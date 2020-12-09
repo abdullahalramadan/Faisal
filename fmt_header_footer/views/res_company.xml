@@ -10,7 +10,7 @@
 
                 <xpath expr="//field[@name='favicon']" position="after">
                     <field name="invoice_header_image" />
-                     <field name="invoice_header_image" wedget="image"/>
+                     <field name="invoice_footer_image" widget="image"/>
                 </xpath>
             </field>
         </record>
