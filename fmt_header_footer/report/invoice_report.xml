@@ -20,7 +20,7 @@
         <div class="footer o_standard_footer">
                 <div class="text-center" style="border-top: 1px solid black;">
                  <img t-if="company.invoice_footer_image" t-att-src="image_data_uri(company.invoice_footer_image)"  alt="Footer"/>
-                    
+
                     <div name="financial_infos">
                         <span t-field="company.report_footer"/>
                     </div>
